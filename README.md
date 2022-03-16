@@ -18,3 +18,8 @@ You can automate the process by putting the command in your Vim configuration
 file as suggested [here][auto].
 
 [auto]: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
+
+###### Add .vimrc file
+```sh
+wget https://raw.githubusercontent.com/TylerAdamMartinez/.vimrc/main/.vimrc
+```
