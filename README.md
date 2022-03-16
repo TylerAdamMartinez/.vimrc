@@ -23,6 +23,10 @@ file as suggested [here][auto].
 ```sh
 wget https://raw.githubusercontent.com/TylerAdamMartinez/.vimrc/main/.vimrc
 ```
+###### Add .zshrc file
+```sh
+wget https://raw.githubusercontent.com/TylerAdamMartinez/.vimrc/main/.zshrc
+```
 
 Reload .vimrc and `:PlugInstall` to install plugins.
 
