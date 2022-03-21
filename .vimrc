@@ -1,7 +1,8 @@
 "Basic Settings
 :set number
+:set rnu
 :set list
-:syntax on   
+:syntax on
 :set cursorline
 :set cursorcolumn
 :set hlsearch
@@ -18,12 +19,12 @@
 " PlugINs using vim-plug as PlugIN manager
 " url: https://github.com/junegunn/vim-plug
 call plug#begin('~/local/share/vim/plugged')
-
-Plug 'vim-scripts/AutoComplPop'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'rust-lang/rust.vim'
-
+  Plug 'alx741/vim-rustfmt'
+  Plug 'vim-scripts/AutoComplPop'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'dense-analysis/ale'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 "PlugIN 'vim-airline/vim-airline-themes' Settings
 let g:airline_themes = 'base16'
