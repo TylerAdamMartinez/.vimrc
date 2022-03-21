@@ -19,6 +19,7 @@
 " PlugINs using vim-plug as PlugIN manager
 " url: https://github.com/junegunn/vim-plug
 call plug#begin('~/local/share/vim/plugged')
+  Plug 'rust-analyzer/rust-analyzer'
   Plug 'alx741/vim-rustfmt'
   Plug 'vim-scripts/AutoComplPop'
   Plug 'vim-airline/vim-airline'
