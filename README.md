@@ -11,7 +11,7 @@
 2. Install oh-my-zsh
 3. Config zsh with .zshrc file
 ```sh
-wget https://raw.githubusercontent.com/TylerAdamMartinez/.vimrc/main/.zshrc
+wget https://raw.githubusercontent.com/TylerAdamMartinez/Shell-Config/main/.zshrc
 ```
 4. Install starship prompt
 5. Config starship prompt with starship.toml file
@@ -22,7 +22,7 @@ wget https://raw.githubusercontent.com/TylerAdamMartinez/Shell-Config/main/start
 6. Install vim
 7. Config vim with .vimrc file
 ```sh
-wget https://raw.githubusercontent.com/TylerAdamMartinez/.vimrc/main/.vimrc
+wget https://raw.githubusercontent.com/TylerAdamMartinez/Shell-Config/main/.vimrc
 ```
 8. Install vim-plug package manager
 [Download plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
