@@ -41,3 +41,10 @@ Reload .vimrc and `:PlugInstall` to install plugins.
 | `PlugStatus`                        | Check the status of plugins                                        |
 | `PlugDiff`                          | Examine changes from the previous update and the pending changes   |
 | `PlugSnapshot[!] [output path]`     | Generate script for restoring the current snapshot of the plugins  |
+
+
+###### Add .starship.toml file
+```sh
+mkdir -p ~/.config && touch ~/.config/starship.toml
+wget https://raw.githubusercontent.com/TylerAdamMartinez/Shell-Config/main/startship.toml
+```
