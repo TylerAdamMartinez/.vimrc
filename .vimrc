@@ -27,6 +27,7 @@ call plug#begin('~/local/share/vim/plugged')
   Plug 'dense-analysis/ale'
   Plug 'rust-lang/rust.vim'
   Plug 'ziglang/zig.vim'
+  Plug 'preservim/nerdtree'
 call plug#end()
 "PlugIN 'vim-airline/vim-airline-themes' Settings
 let g:airline_themes = 'base16'
