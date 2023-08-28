@@ -15,5 +15,3 @@ plugins=(git)
 ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
-# Add starship to zsh
-eval "$(starship init zsh)"
