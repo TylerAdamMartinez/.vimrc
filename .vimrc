@@ -28,8 +28,29 @@ call plug#begin('~/local/share/vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'ziglang/zig.vim'
   Plug 'preservim/nerdtree'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 "PlugIN 'vim-airline/vim-airline-themes' Settings
 let g:airline_themes = 'base16'
 "PlugIN 'vim-airline/vim-airlines' Settings
 let g:airline#extensions#tabline#enabled = 1
+" Plugin 'neoclide/coc.nvim' Extensions
+let g:coc_global_extensions = [
+\ 'coc-json',
+\ 'coc-git',
+\ 'coc-html',
+\ 'coc-css',
+\ 'coc-cssmodules',
+\ 'coc-tsserver',
+\ 'coc-pyright',
+\ 'coc-vimlsp',
+\ 'coc-yaml',
+\ 'coc-tslint',
+\ 'coc-eslint',
+\ 'coc-markdownlint',
+\ 'coc-clangd',
+\ 'coc-java',
+\ 'coc-rust-analyzer',
+\ 'coc-zig',
+\ ]
+
