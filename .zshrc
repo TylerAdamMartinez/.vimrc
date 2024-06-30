@@ -13,6 +13,9 @@ ZSH_THEME="af-magic"
 plugins=(git)
 
 ZSH_DISABLE_COMPFIX="true"
+
+eval "$(zoxide init zsh)"
+
 source $ZSH/oh-my-zsh.sh
 
 alias ll="exa -la --icons --classify"
