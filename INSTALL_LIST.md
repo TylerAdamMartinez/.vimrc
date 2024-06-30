@@ -1,3 +1,5 @@
+* tmux  
+```sudo apt install tmux```
 * exa  
 ```cargo install exa```
 * bat  
