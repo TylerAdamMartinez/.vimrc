@@ -1,5 +1,5 @@
 * oxide  
-```curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh```
+```cargo install zoxide```
 * tmux  
 ```sudo apt install tmux```
 * exa  
