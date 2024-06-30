@@ -15,3 +15,4 @@ plugins=(git)
 ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
+alias ll="exa -la --icons --classify"
