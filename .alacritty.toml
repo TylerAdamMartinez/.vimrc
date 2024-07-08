@@ -1,1 +1,31 @@
+## Where is the config file located?
+##
+## On Windows:
+## * %APPDATA%\alacritty\alacritty.toml
+##
+## On Linux:
+## * $HOME/.alacritty.toml
+
+working_directory = "...Absolute Path to Directory for all projects"
+
 [env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 5, y = 5 }
+opacity = 0.90
+title = "Alacritty"
+
+[scrolling]
+history = 100000
+multiplier = 5
+
+[font]
+size = 12.5
+# This font must be installed on your machine. 
+normal = { family = "0xProto Nerd Font" }
+
+[colors.primary]
+foreground = "#d8d8d8"
+background = "#191919"
+
