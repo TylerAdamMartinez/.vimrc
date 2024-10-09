@@ -1,0 +1,33 @@
+[language-server]
+deno = { command = "deno", args = ["lsp"] }
+taplo = { command = "taplo" }
+omnisharp = { command = "omnisharp", args = ["-lsp"] }
+typescript-language-server = { command = "typescript-language-server" }
+vscode-html-language-server = { command = "vscode-html-language-server" }
+vscode-css-language-server = { command = "vscode-css-language-server" }
+
+[[language]]
+name = "toml"
+auto-format = true
+formatter = { command = "taplo", args = ["fmt", "-"] }
+language-servers = ["taplo"]
+
+[[language]]
+name = "c-sharp"
+language-servers = ["omnisharp"]
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
+
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
