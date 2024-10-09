@@ -11,11 +11,17 @@ command = "rust-analyzer"
 
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
+inlayHints.bindingModeHints.enable = false
+inlayHints.closingBraceHints.minLines = 10
+inlayHints.closureReturnTypeHints.enable = "with_block"
+inlayHints.discriminantHints.enable = "fieldless"
+inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+inlayHints.typeHints.hideClosureInitialization = false
 
 [[language]]
 name = "rust"
 language-servers = ["rust-analyzer"]
-auto-format = true  
+auto-format = true
 formatter = { command = "rustfmt", args = ["--emit=stdout"] }
 
 [[language]]
@@ -26,6 +32,11 @@ language-servers = ["taplo"]
 
 [[language]]
 name = "c-sharp"
+scope = "source.csharp"
+injection-regex = "c-?sharp"
+file-types = ["cs", "csx", "cake"]
+roots = ["sln", "csproj"]
+comment-token = "//"
 language-servers = ["omnisharp"]
 
 [[language]]
