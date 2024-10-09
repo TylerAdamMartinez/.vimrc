@@ -6,6 +6,18 @@ typescript-language-server = { command = "typescript-language-server" }
 vscode-html-language-server = { command = "vscode-html-language-server" }
 vscode-css-language-server = { command = "vscode-css-language-server" }
 
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "clippy" }
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true  
+formatter = { command = "rustfmt", args = ["--emit=stdout"] }
+
 [[language]]
 name = "toml"
 auto-format = true
