@@ -18,6 +18,8 @@ eval "$(zoxide init zsh)"
 
 source $ZSH/oh-my-zsh.sh
 
+export HELIX_RUNTIME=~/src/helix/runtime
+
 alias ll="exa -la --icons --classify"
 
 set -o vi
