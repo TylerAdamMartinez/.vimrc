@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 export HELIX_RUNTIME=~/src/helix/runtime
 
-alias ll="exa -la --icons --classify"
+alias ll="exa -laG --icons --classify --git --all --group-directories-first"
 
 set -o vi
 
