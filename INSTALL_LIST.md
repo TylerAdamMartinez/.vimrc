@@ -8,5 +8,7 @@
 ```cargo install bat```
 * fzf  
 ```sudo apt install fzf```
+* fd  
+```cargo install fd-find```
 * nvm  
 ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash```
