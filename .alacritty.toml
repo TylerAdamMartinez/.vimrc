@@ -1,12 +1,8 @@
-## Where is the config file located?
-##
-## On Windows:
-## * %APPDATA%\alacritty\alacritty.toml
-##
-## On Linux:
-## * $HOME/.alacritty.toml
-
-working_directory = "...Absolute Path to Directory for all projects"
+# Windows:
+# * %APPDATA%\alacritty\alacritty.toml
+#
+# Linux:
+# * $HOME/.alacritty.toml
 
 [env]
 TERM = "xterm-256color"
