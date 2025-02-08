@@ -1,0 +1,27 @@
+# ~/.config/starship.toml
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = false
+
+[status]
+format = "[$symbol $status]($style) "
+symbol = "❌"
+success_symbol = "✅"
+not_executable_symbol = "🚫"
+not_found_symbol = "🔍"
+sigint_symbol = "⛔"
+signal_symbol = "⚡"
+style = "bold red"
+map_symbol = true
+recognize_signal_code = true
+pipestatus = false
+pipestatus_separator = "|"
+pipestatus_format = '\[$pipestatus\] => [$symbol$common_meaning$signal_name$maybe_int]($style) '
+disabled = false
