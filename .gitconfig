@@ -1,0 +1,11 @@
+# ~/.gitconfig 
+
+[core]
+	editor = hx
+
+[alias]
+	co = checkout
+	b = branch
+	cmv = commit -v
+	s = status -s
+	l = log --oneline --graph --decorate --all
