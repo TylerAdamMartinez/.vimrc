@@ -1,37 +1,28 @@
 # <p align="center"> [Tyler Adam Martinez's](https://github.com/TylerAdamMartinez) Shell Configuration
 
-## Setup
+### Setup
 
-### Step 1. Install zsh
+#### Step 1. Install Fish Shell
 
-Open a terminal and run the following commands to install Zsh:
+Open a terminal and run the following commands to install Fish:
 
 ```bash
 sudo apt-get update
-sudo apt-get install zsh
+sudo apt-get install fish
 ```
 
-### Step 2. Install Oh-My-Zsh
+#### Step 2. Set Fish as the Default Shell
 
-After installing Zsh, you can install Oh-My-Zsh, a popular Zsh configuration framework. Run the following command to install Oh-My-Zsh:  
+To set Fish as your default shell, use the following command:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s $(which fish)
 ```
 
-### Step 3. Config zsh with .zshrc file
+Close and reopen the terminal for the changes to take effect.
 
-After installing Zsh & Oh-My-Zsh, you can configure Zsh, with the `.zshrc` file. Run the following command in your root directory:  
+#### Step 3. Follow INSTALL_LIST.md
 
-```sh
-wget https://raw.githubusercontent.com/TylerAdamMartinez/Shell-Config/main/.zshrc
-```
+After installing Fish and setting it as the default shell, refer to the `INSTALL_LIST.md` file in this repository and follow the instructions there to complete the setup.
 
-### Step 4. Set Zsh as the Default Shell
-To set Zsh as your default shell, use the following command:  
 
-```bash
-chsh -s $(which zsh)
-```
-
-Close and reopen the terminal for the changes to take effect.  
