@@ -1,9 +1,4 @@
-# <p align="center"> [Tyler Adam Martinez's](https://github.com/TylerAdamMartinez) Shell Configurations
-
-<p align="center" style="display: flex;" >
-<img src="https://visitor-badge.glitch.me/badge?page_id=tyleradammartinez.Shell-Config" />
- <a href="https://github.com/TylerAdamMartinez/Optimal-Accessibility/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/TylerAdamMartinez/Shell-Config"></a>
- </p>    
+# <p align="center"> [Tyler Adam Martinez's](https://github.com/TylerAdamMartinez) Shell Configuration
 
 ## Setup
 
