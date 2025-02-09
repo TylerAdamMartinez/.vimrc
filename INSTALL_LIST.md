@@ -25,6 +25,7 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **Zoxide** | Smarter `cd` command (jump to directories quickly) | `cargo install zoxide` |
 | **Exa** | Modern `ls` replacement | `cargo install exa` |
 | **Bat** | Enhanced `cat` command | `cargo install bat` |
+| **Yazi** | TUI-based file explorer | `brew install yazi` |
 
 ### **🛠 Productivity & Navigation**
 | Tool  | Description | Installation |
