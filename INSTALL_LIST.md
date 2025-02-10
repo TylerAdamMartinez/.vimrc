@@ -50,8 +50,7 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **C#** | `omnisharp` | `dotnet tool install --global omnisharp` |
 | **CSS** | `vscode-css-languageserver` | `npm install -g vscode-langservers-extracted` |
 | **Dockerfile** | `docker-langserver` | `npm install -g dockerfile-language-server-nodejs` |
-| **Docker Compose** | `docker-compose-langserver` | `pip install docker-compose-language-service` |
-| **Fish** | `fish-language-server` | `npm install -g fish-language-server` |
+| **Fish** | `fish-language-server` | `npm install -g fish-lsp` |
 | **HTML** | `vscode-html-languageserver` | `npm install -g vscode-langservers-extracted` |
 | **Java** | `jdtls` | Install via [Eclipse JDT Language Server](https://github.com/eclipse-jdtls/eclipse.jdt.ls) or use: `brew install jdtls` |
 | **JavaScript** | `typescript-language-server` | `npm install -g typescript typescript-language-server` |
