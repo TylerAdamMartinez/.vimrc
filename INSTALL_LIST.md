@@ -42,7 +42,28 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **NVM** | Node.js version manager | `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash` |
 | **NVM for Fish** | Fish-compatible NVM wrapper | `fisher install jorgebucaran/nvm.fish` |
 
----
+### **🧬 Helix LSP Setup**
+
+| Language  | LSP | Installation |
+|-----------|-----|-------------|
+| **C** | `clangd` | `sudo apt install clangd` (Linux) / `brew install llvm` (macOS) |
+| **C#** | `omnisharp` | `dotnet tool install --global omnisharp` |
+| **CSS** | `vscode-css-languageserver` | `npm install -g vscode-langservers-extracted` |
+| **Dockerfile** | `docker-langserver` | `npm install -g dockerfile-language-server-nodejs` |
+| **Docker Compose** | `docker-compose-langserver` | `pip install docker-compose-language-service` |
+| **Fish** | `fish-language-server` | `npm install -g fish-language-server` |
+| **HTML** | `vscode-html-languageserver` | `npm install -g vscode-langservers-extracted` |
+| **Java** | `jdtls` | Install via [Eclipse JDT Language Server](https://github.com/eclipse-jdtls/eclipse.jdt.ls) or use: `brew install jdtls` |
+| **JavaScript** | `typescript-language-server` | `npm install -g typescript typescript-language-server` |
+| **TypeScript** | `typescript-language-server` | `npm install -g typescript typescript-language-server` |
+| **JSON** | `vscode-json-languageserver` | `npm install -g vscode-langservers-extracted` |
+| **JSX/TSX** | `typescript-language-server` | `npm install -g typescript typescript-language-server` |
+| **Kotlin** | `kotlin-language-server` | `brew install kotlin-language-server` (macOS) / `sdk install kotlin` (Linux) |
+| **Markdown** | `marksman` | `brew install marksman` (macOS) / `cargo install marksman` (Linux) |
+| **Python** | `pyright` | `npm install -g pyright` |
+| **Rust** | `rust-analyzer` | `rustup component add rust-analyzer` |
+| **TOML** | `taplo` | `cargo install taplo-cli --features lsp` |
+| **YAML** | `yaml-language-server` | `npm install -g yaml-language-server` |
 
 ### **🔹 Installing Nerd Fonts**
 Some tools require a **Nerd Font** for proper icon support.
