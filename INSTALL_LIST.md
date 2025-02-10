@@ -26,6 +26,7 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **Exa** | Modern `ls` replacement | `cargo install exa` |
 | **Bat** | Enhanced `cat` command | `cargo install bat` |
 | **Yazi** | TUI-based file explorer | `brew install yazi` |
+| **Htop** | An interactive process viewer | `brew install htop` |
 
 ### **🛠 Productivity & Navigation**
 | Tool  | Description | Installation |
