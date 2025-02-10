@@ -1,11 +1,17 @@
-theme = "base16_transparent"
+theme = "carbonfox"
 
 [editor]
 line-number = "relative"
 mouse = false
+auto-save = true
 cursorline = true
 true-color = true
 popup-border = "popup"
+end-of-line-diagnostics = "hint"
+bufferline = "always"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -20,4 +26,16 @@ auto-signature-help = false
 display-messages = true
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "file-name"]
+left = ["spinner", "mode", "version-control"]
+center = ["read-only-indicator", "file-name", "file-modification-indicator"]
+right = [
+  "diagnostics",
+  "selections",
+  "register",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
