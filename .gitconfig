@@ -6,6 +6,13 @@
 [alias]
 	co = checkout
 	b = branch
-	cmv = commit -v
-	s = status -s
-	l = log --oneline --graph --decorate --all
+	cm = commit -v
+	ss = status -s
+	ll = log --oneline --graph --decorate --all
+	a = add --patch
+	ph = push
+	pl = pull
+	pp = !git pull && git push
+
+[interactive]
+	singleKey = true
