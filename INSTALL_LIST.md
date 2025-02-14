@@ -27,6 +27,7 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **Bat** | Enhanced `cat` command | `cargo install bat` |
 | **Yazi** | TUI-based file explorer | `brew install yazi` |
 | **Htop** | An interactive process viewer | `brew install htop` |
+| **Starship** | Cross-shell prompt | `cargo install starship --locked` |
 
 ### **🛠 Productivity & Navigation**
 | Tool  | Description | Installation |
