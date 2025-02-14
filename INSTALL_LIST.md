@@ -31,7 +31,7 @@ After installing **Cargo** and **Fisher**, install the following tools:
 ### **🛠 Productivity & Navigation**
 | Tool  | Description | Installation |
 |--------|------------|--------------|
-| **Tmux** | Terminal multiplexer | `sudo apt install tmux` |
+| **Zellij** | Terminal multiplexer | `cargo install zellij` |
 | **Fzf** | Fuzzy file finder | `sudo apt install fzf` |
 | **Fd** | Faster `find` alternative | `cargo install fd-find` |
 | **Ripgrep (rg)** | Faster search tool | `cargo install ripgrep` |
