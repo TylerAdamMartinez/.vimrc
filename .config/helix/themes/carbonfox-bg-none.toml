@@ -1,0 +1,6 @@
+# ~/.config/helix/themes/carbonfox-bg-none.toml
+
+inherits = "carbonfox"
+
+[ui]
+background = "none"
