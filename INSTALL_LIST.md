@@ -66,6 +66,12 @@ After installing **Cargo** and **Fisher**, install the following tools:
 | **TOML** | `taplo` | `cargo install taplo-cli --features lsp` |
 | **YAML** | `yaml-language-server` | `npm install -g yaml-language-server` |
 
+### **🧑‍💻 Helix Formatter Setup**
+
+| Formatter  | Description | Installation Command |
+|------------|------------|-----------------------|
+| **Prettier** | Prettier is a versatile code formatter | `npm install -g prettier` |
+
 ### **🔹 Installing Nerd Fonts**
 Some tools require a **Nerd Font** for proper icon support.
 
