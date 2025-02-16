@@ -1,18 +1,47 @@
 # ~/.gitconfig 
 
 [core]
+	excludesfile = ~/.gitignore
 	editor = hx
+	ignorecase = false
+
+[push]
+	default = simple
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	grep = auto
+	ui = auto
 
 [alias]
 	co = checkout
+	d = diff
 	b = branch
+	ba = branch -a
 	cm = commit -v
 	ss = status -s
 	ll = log --oneline --graph --decorate --all
-	a = add --patch
+	aa = add -A
+	ap = "!f() { git status --short | peco | awk '{print $2}' | xargs -o -I{} git add -p -- {}; }; f"
 	ph = push
 	pl = pull
 	pp = !git pull && git push
+	rpo = remote prune origin
+	open = "!gh repo view --web"
+	# edit conflicted file on merge
+	edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; hx $(f)"
+	# add conflicted file on merge
+	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 
 [interactive]
 	singleKey = true
+
+[github]
+	user = "TylerAdamMartinez"
+
+[ghq]
+	root = ~/.ghq
+
