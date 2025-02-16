@@ -1,7 +1,11 @@
 # ~/.config/fish/config.fish
 
-# Initialize Homebrew (important for some commands)
-eval (/opt/homebrew/bin/brew shellenv)
+set fish_greeting ""
+
+fish_vi_key_bindings
+
+# Add this to bind Ctrl + F in insert mode to accept autosuggestion
+bind -M insert \cf accept-autosuggestion
 
 if type -q zoxide
     zoxide init fish | source
@@ -11,26 +15,19 @@ if type -q starship
     starship init fish | source
 end
 
-function ll
-    exa -laG --icons --classify --git --all --group-directories-first
-end
+alias ll "ls -l"
 
-function g
-    git $argv
-end
-
-complete -c g -w git
-
-function y
-    set tmp (mktemp -t "yazi-cwd.XXXXXX")
-    yazi $argv --cwd-file="$tmp"
-    if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-        builtin cd -- "$cwd"
-    end
-    rm -f -- "$tmp"
+switch (uname)
+    case Darwin
+        source (dirname (status --current-filename))/config-osx.fish
+    case Linux
+        source (dirname (status --current-filename))/config-linux.fish
+    case '*'
+        source (dirname (status --current-filename))/config-windows.fish
 end
 
 # Run neofetch on startup
 if type -q neofetch
     neofetch
 end
+
