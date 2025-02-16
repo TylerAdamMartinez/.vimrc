@@ -61,6 +61,7 @@ After installing **Cargo**, **GitHub CLI**, and **Fisher**, install the followin
 | **Ripgrep (rg)** | Faster search tool | `cargo install ripgrep` |
 | **Procs** | Modern process viewer | `cargo install procs` |
 | **Ghq** | Repository manager | `brew install ghq` (macOS) / `go install github.com/x-motemen/ghq@latest` (Linux) |
+| **Peco** | Interactive filtering CLI tool | `brew install peco` (macOS) / `sudo apt install peco` (Linux) |
 
 ### Node.js Version Manager
 | Tool  | Description | Installation |
