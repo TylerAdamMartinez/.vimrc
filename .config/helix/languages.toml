@@ -1,6 +1,9 @@
+# ~/.config/helix/languages.toml
+
 [language-server]
 deno = { command = "deno", args = ["lsp"] }
 taplo = { command = "taplo" }
+marksman = { command = "marksman" }
 omnisharp = { command = "omnisharp", args = ["-lsp"] }
 typescript-language-server = { command = "typescript-language-server" }
 vscode-html-language-server = { command = "vscode-html-language-server" }
@@ -26,31 +29,59 @@ formatter = { command = "rustfmt", args = ["--emit=stdout"] }
 
 [[language]]
 name = "toml"
+language-servers = ["taplo"]
 auto-format = true
 formatter = { command = "taplo", args = ["fmt", "-"] }
-language-servers = ["taplo"]
 
 [[language]]
 name = "c-sharp"
+language-servers = ["omnisharp"]
+formatter = { command = "prettier", args = ["--parser", "cs"] }
+auto-format = true
 scope = "source.csharp"
 injection-regex = "c-?sharp"
 file-types = ["cs", "csx", "cake"]
 roots = ["sln", "csproj"]
 comment-token = "//"
-language-servers = ["omnisharp"]
 
 [[language]]
 name = "typescript"
 language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
 
 [[language]]
 name = "javascript"
 language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
 
 [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server"]
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
 
 [[language]]
 name = "css"
 language-servers = ["vscode-css-language-server"]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
+auto-format = true
